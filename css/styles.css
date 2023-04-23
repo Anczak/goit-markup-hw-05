@@ -7,6 +7,7 @@
   --brand-darkgray: #2f303a;
   --svg-gray: #afb1b8;
   --portfolio-border-gray: #eeeeee;
+  --trasnition-master: cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
   margin: 0;
@@ -333,6 +334,24 @@ header .logo {
 .project-card {
   border: var(--portfolio-border-gray) solid 1px;
 }
+.project-card-container {
+  position: relative;
+  overflow: hidden;
+}
+.project-card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--trasnition-master);
+}
+.project-card:hover .project-card-overlay,
+.project-card:focus .project-card-overlay {
+  transform: translateY(0%);
+  transition: transform 250ms var(--trasnition-master);
+}
 .project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -344,6 +363,16 @@ header .logo {
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0.06em;
+}
+.project-card-overlay-text {
+  height: 100%;
+  padding: 49px 45px 49px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
 }
 .project-card-desc {
   color: var(--brand-gray);
@@ -367,6 +396,15 @@ header .logo {
 .links:hover,
 .links:active {
   color: var(--brand-blue);
+}
+.links::after {
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  left: 552px;
+  top: 76px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 .contact {
   color: var(--brand-gray);
