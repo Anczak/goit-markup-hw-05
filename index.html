@@ -17,14 +17,24 @@
         <nav class="section-header-nav">
           <a class="logo" href="#">Web<span>Studio</span></a>
           <ul class="section-header-list">
-            <li><a class="links" href="#">Agencja</a></li>
-            <li><a class="links" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="links">Kontakt</a></li>
+            <li>
+              <div class="link-underline">
+                <a class="links" href="#">Agencja</a>
+              </div>
+            </li>
+            <li>
+              <div class="link-underline">
+                <a class="links" href="./portfolio.html">Portfolio</a>
+              </div>
+            </li>
+            <li>
+              <div class="link-underline"><a class="links">Kontakt</a></div>
+            </li>
           </ul>
         </nav>
         <ul class="section-header-contact-list">
           <li class="contact-list-element">
-            <a class="contact" href="mailto:info@devstudio.com">
+            <a href="mailto:info@devstudio.com" class="contact">
               <svg class="envelope">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -45,7 +55,9 @@
     <section class="section order-solution">
       <div class="container container-solution">
         <h1 class="order-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="order-button" type="button">Zamów usługę</button>
+        <button data-modal-open class="order-button" type="button">
+          Zamów usługę
+        </button>
       </div>
     </section>
     <main>
@@ -372,5 +384,13 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal-window">
+        <button data-modal-close type="button" class="modal-close-btn">
+          X
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
