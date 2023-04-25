@@ -252,6 +252,23 @@ header .logo {
   justify-content: center;
   gap: 30px;
 }
+.our-work-container {
+  position: relative;
+}
+.our-work-container h3 {
+  position: absolute;
+  top: 224px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 .our-team-section {
   background-color: var(--brand-bluegray);
   display: flex;
