@@ -78,10 +78,10 @@ header > div {
   padding: 25px 0;
 }
 .container-solution {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center; */
   padding: 133px 0;
 }
 .container-advantages {
@@ -108,7 +108,6 @@ header .logo {
   font-size: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   gap: 46px;
 }
 .section-header-contact-list {
@@ -116,7 +115,6 @@ header .logo {
   font-size: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   gap: 50px;
 }
 .section-footer {
@@ -144,7 +142,6 @@ header .logo {
 }
 .footer-socials-link:hover {
   background-color: var(--brand-blue);
-  cursor: pointer;
 }
 .footer-socials-svg {
   max-width: 20px;
@@ -166,7 +163,7 @@ header .logo {
   background-size: cover;
 }
 .order-header {
-  margin: 0 0 30px 0;
+  margin: 0 auto 30px auto;
   max-width: 696px;
   text-align: center;
   color: white;
@@ -242,7 +239,7 @@ header .logo {
 }
 .our-work-header {
   text-align: center;
-  margin: 0 0 50px 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -252,10 +249,10 @@ header .logo {
   justify-content: center;
   gap: 30px;
 }
-.our-work-container {
+.our-work-list > li {
   position: relative;
 }
-.our-work-container h3 {
+.our-work-list h3 {
   position: absolute;
   top: 224px;
   width: 100%;
@@ -315,7 +312,7 @@ header .logo {
   max-height: 44px;
 }
 .team-member-social-link:hover {
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: var(--brand-blue);
 }
 .team-member-social-svg {
@@ -324,8 +321,7 @@ header .logo {
   padding: 12px;
   fill: var(--svg-gray);
 }
-.team-member-social-svg:hover {
-  cursor: pointer;
+.team-member-social-link:hover .team-member-social-svg {
   fill: white;
 }
 .our-customers-list {
@@ -342,7 +338,6 @@ header .logo {
   fill: var(--svg-gray);
 }
 .customer-svg:hover {
-  cursor: pointer;
   fill: var(--brand-blue);
   border-color: var(--brand-blue);
 }
@@ -454,7 +449,7 @@ header .logo {
 .links:active {
   color: var(--brand-blue);
 }
-.link-underline:hover::after {
+.link-underline::after {
   content: "";
   display: block;
   position: absolute;
