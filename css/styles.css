@@ -51,6 +51,11 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.modal-close-btn > svg {
+  max-width: 18px;
+  max-height: 18px;
+  margin: 5px;
+}
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
@@ -78,10 +83,10 @@ header > div {
   padding: 25px 0;
 }
 .container-solution {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   padding: 133px 0;
 }
 .container-advantages {
@@ -163,7 +168,7 @@ header .logo {
   background-size: cover;
 }
 .order-header {
-  margin: 0 auto 30px auto;
+  margin-bottom: 30px;
   max-width: 696px;
   text-align: center;
   color: white;
